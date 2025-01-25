@@ -1,6 +1,52 @@
 # BugBusters
 
-Welcome to **BugBusters**, a comprehensive full-stack application designed to facilitate company-specific developer collaboration. Inspired by platforms like StackOverflow, BugBusters provides a private, secure, and feature-rich environment for employees to share issues, provide solutions, and foster a collaborative workspace.
+BugBusters is a private developer panel for internal issue tracking and collaboration within companies. It serves as a secure, company-specific alternative to public platforms like StackOverflow, enabling employees to share issues, provide solutions, and engage in community-driven problem-solving.
+
+---
+
+![Landing Page](BugBustersLanding.png)
+
+## Why This Project?
+
+### 1. Solving Real-World Problems
+BugBusters addresses the need for private, company-specific developer collaboration, offering a secure alternative to public platforms like StackOverflow. It ensures sensitive data and internal discussions remain confidential.
+
+### 2. Comprehensive Full-Stack Implementation
+This project showcases a well-rounded full-stack application, combining:  
+- A **scalable backend** built with **ASP.NET Core** using best practices like Clean Architecture and Repository Pattern.  
+- A **modern React-based frontend** with a polished user interface and seamless user experience.
+
+### 3. Demonstration of Key Software Engineering Skills
+- **System Design**: Designed with clean separation of concerns, modular architecture, and scalability in mind.  
+- **Database Design**: Features optimized database schema using **Entity Framework Core** with migrations and seed data.  
+- **Role-Based Access Control**: Implemented secure role-based access for Admins, Moderators, and Users.  
+- **API Documentation**: Includes detailed Swagger API documentation for easy integration and testing.  
+- **Frontend Engineering**: Demonstrates reusable React components, state management, and responsive design.
+
+### 4. End-to-End Project Development
+This project demonstrates proficiency in the entire software development lifecycle:  
+- **Requirement Analysis**: Designed features based on real-world use cases.  
+- **Implementation**: Developed scalable, production-ready client and server applications.  
+- **Testing**: Comprehensive unit and integration testing for backend logic and frontend UI.  
+- **Deployment (Optional)**: Can be hosted on modern platforms for live demos.
+
+### 5. Industry-Relevant Tech Stack
+This project utilizes technologies commonly used in professional software development, including:  
+- **Backend**: ASP.NET Core 7, JWT Authentication, SQL Server, Serilog.  
+- **Frontend**: React, TypeScript, React Query, Sass, Bootstrap.  
+- **Tools**: Git, GitHub Actions, Jest, and more.
+
+---
+
+## Key Achievements
+
+1. **Role-Based User Management**: Implemented secure and efficient user authentication with JWT and role-based access control for Admins, Moderators, and Users.  
+2. **Dynamic Q&A System**: Built a robust question-and-answer platform with upvote/downvote functionality and admin approval workflows.  
+3. **Responsive UI**: Delivered a mobile-friendly, responsive design using Sass, Bootstrap, and modern React best practices.  
+4. **Scalable Backend**: Architected the backend with modular layers, including API, Service, and Repository layers, adhering to Clean Architecture principles.  
+5. **Comprehensive Testing**: Achieved high code coverage with **unit tests** (NUnit, Moq) and **frontend tests** (Jest, Testing Library).  
+6. **API Documentation**: Delivered a well-documented API using Swagger, facilitating easy integration and testing.  
+7. **Project Management**: Maintained a clean Git workflow with well-organized commits, branching, and detailed documentation.
 
 ---
 
@@ -13,104 +59,7 @@ This portfolio showcases the two major components of the BugBusters project:
 
 ---
 
-## Features
-
-### Server
-- **User Management**: Registration, login, and role-based access control (Admin, Moderator, User).
-- **Q&A Functionality**: 
-  - Post, answer, and vote on questions.
-  - Admin approval for publishing questions and answers.
-- **Clean Architecture**: Built with industry best practices, leveraging ASP.NET Core, Entity Framework, and JWT authentication.
-- **Logging and Testing**: Integrated Serilog for logging and NUnit/Moq for unit testing.
-
-### Client
-- **User-Friendly Interface**: 
-  - Post and browse questions.
-  - Answer questions with rich text formatting.
-- **Advanced Features**:
-  - Upvote/downvote content.
-  - Real-time updates and responsive design.
-- **Rich UI Components**: Built with React, Redux, and Bootstrap for seamless user experience.
-- **Search and Navigation**: Search functionality to quickly find relevant topics.
-
----
-
-## Technology Stack
-
-### Backend (Server)
-- **Framework**: ASP.NET Core 7
-- **Database**: SQL Server with Entity Framework Core
-- **Authentication**: JWT-based
-- **Testing**: NUnit, Moq
-- **Architecture**: Clean Architecture with Repository Pattern
-
-### Frontend (Client)
-- **Framework**: React 18
-- **State Management**: React Query, Context API
-- **Styling**: Sass, Bootstrap
-- **Routing**: React Router DOM
-- **Rich Text**: TinyMCE, Stacks Editor
-- **Testing**: Jest, React Testing Library
-
----
-
-## How to Explore This Project
-
-### 1. Clone the BugBusters.Server & BugBusters.Client Repositories
-```bash
-git clone https://github.com/biswajitpanday/BugBusters.Server.git
-cd BugBusters.Server
-git clone https://github.com/biswajitpanday/BugBusters.Client.git
-cd BugBusters.Server
-```
-
-### 2. Access Individual Repositories
-- **[BugBusters Server](https://github.com/biswajitpanday/BugBusters.Server)**:
-  - Follow the setup instructions in the server README to get the backend running.
-- **[BugBusters Client](https://github.com/biswajitpanday/BugBusters.Client)**:
-  - Follow the setup instructions in the client README to get the frontend running.
-
----
-
-## Running Locally
-
-### Server Setup
-1. Clone the server repository:
-   ```bash
-   git clone https://github.com/biswajitpanday/BugBusters.Server.git
-   cd BugBusters.Server
-   ```
-2. Install dependencies and apply migrations:
-   ```bash
-   dotnet restore
-   dotnet ef database update
-   ```
-3. Start the server:
-   ```bash
-   dotnet run
-   ```
-
-### Client Setup
-1. Clone the client repository:
-   ```bash
-   git clone https://github.com/biswajitpanday/BugBusters.Client.git
-   cd BugBusters.Client
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm start
-   ```
-
----
-
 ## Screenshots
-
-### Landing Page
-![Landing Page](BugBustersLanding.png)
 
 ### BugBusters Client (Screenshots)
 - **Question List Page**  
@@ -120,24 +69,110 @@ cd BugBusters.Server
   ![Q&A Page](https://github.com/biswajitpanday/BugBusters.Client/blob/master/screenshots/question-description.png)
 
 ### BugBusters Server (Swagger API)
+- **Swagger**
 ![Swagger Screenshot](https://github.com/biswajitpanday/BugBusters.Server/blob/master/swagger-screenshot.png)
 
 ---
 
-## License
+## Features
 
-This project is licensed under the MIT License. See the individual repositories for more details.
+- **User Management**: Registration, login, and profile management.  
+- **Roles**: Role-based access control for Admins, Moderators, and Users.  
+- **Q&A System**: Ask questions, provide answers, upvote/downvote content, and admin approval workflows.  
+- **Search and Navigation**: Advanced search and easy navigation for browsing topics.
 
 ---
 
-## About
+## Technology Stack
 
-Developed by **[Biswajit Panday](https://github.com/biswajitpanday)**.  
-For inquiries or support, feel free to contact me at [biswajitmailid@gmail.com](mailto:biswajitmailid@gmail.com).
+### Backend
+- ASP.NET Core 7
+- Entity Framework Core (Code First, Migrations)
+- SQL Server
+- JWT Authentication
+- Serilog
+- AutoMapper
+- NUnit and Moq for Testing
+
+### Frontend
+- React 18
+- TypeScript
+- React Query and Context API
+- Sass and Bootstrap
+- React Router DOM
+- Jest and Testing Library
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- .NET 7 SDK
+- SQL Server
+- Node.js (v16 or later)
+- npm or yarn
+
+### Setup Instructions
+
+#### Backend
+1. Clone the server repository:
+   ```bash
+   git clone https://github.com/biswajitpanday/BugBusters.Server.git
+   ```
+2. Navigate to the solution directory:
+   ```bash
+   cd BugBusters.Server
+   ```
+3. Restore dependencies:
+   ```bash
+   dotnet restore
+   ```
+4. Apply database migrations:
+   ```bash
+   dotnet ef database update
+   ```
+5. Run the server:
+   ```bash
+   dotnet run
+   ```
+
+#### Frontend
+1. Clone the client repository:
+   ```bash
+   git clone https://github.com/biswajitpanday/BugBusters.Client.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd BugBusters.Client
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Run the application:
+   ```bash
+   npm start
+   ```
 
 ---
 
 ## Contributing
 
-Contributions are welcome!  
-Please fork this repository and submit a pull request for your changes.
+We welcome contributions! Please follow these steps:
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Open a pull request.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Contact
+
+For questions or support, please contact the repository maintainer at biswajitmailid@gmail.com.
