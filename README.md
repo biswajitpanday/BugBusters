@@ -13,8 +13,8 @@ BugBusters addresses the need for private, company-specific developer collaborat
 
 ### 2. Comprehensive Full-Stack Implementation
 This project showcases a well-rounded full-stack application, combining:  
-- A **scalable backend** built with **ASP.NET Core** using best practices like Clean Architecture and Repository Pattern.  
-- A **modern React-based frontend** with a polished user interface and seamless user experience.
+- A **[Scalable backend](https://github.com/biswajitpanday/BugBusters.Server)** built with **ASP.NET Core** using best practices like Clean Architecture and Repository Pattern.  
+- A **[Modern React-based frontend](https://github.com/biswajitpanday/BugBusters.Client)** with a polished user interface and seamless user experience.
 
 ### 3. Demonstration of Key Software Engineering Skills
 - **System Design**: Designed with clean separation of concerns, modular architecture, and scalability in mind.  
