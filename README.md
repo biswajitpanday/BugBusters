@@ -1,3 +1,21 @@
+<table width="100%">
+  <tr>
+    <td align="left">
+      <a href="https://github.com/biswajitpanday/BugBusters.Server">
+        <img src="https://img.shields.io/badge/Server%20Repository-8A2BE2" alt="Server Repository">
+      </a>
+    </td>
+    <td align="right">
+      <a href="https://github.com/biswajitpanday/BugBusters.Client">
+        <img src="https://img.shields.io/badge/Client%20Repository-8A2BE2" alt="Client Repository">
+      </a>
+    </td>
+  </tr>
+</table>
+
+
+
+
 # BugBusters
 
 BugBusters is a private developer panel for internal issue tracking and collaboration within companies. It serves as a secure, company-specific alternative to public platforms like StackOverflow, enabling employees to share issues, provide solutions, and engage in community-driven problem-solving.
